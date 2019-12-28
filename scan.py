@@ -15,12 +15,11 @@ def scan_port(ip,port):
     except:
         #print('не имеется открытых портов')
         pass
-a = input()
-b = input()
-c = input()
-d = input()
-
-ip = (str(a)+'.'+str(b)+'.'+str(c)+'.'+str(d))
+ip = input('введите ip:\n')
+#b = input()
+#c = input()
+#d = input()
+#ip = (str(a)+'.'+str(b)+'.'+str(c)+'.'+str(d))
 start_time = time.time()
 for i in range(10000):
     scan_port(ip,i)
