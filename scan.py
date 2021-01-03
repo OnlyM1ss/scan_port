@@ -26,8 +26,8 @@ while t<= 1.0:
     t+=0.01
 for i in range(10000):
     scan_port(ip,i)
-    if (i == 0):
-        print('не имеется открытых портов')
+if (i == 0):
+    print('all ports is closing')
 time.sleep(0.1)
 bar.finish()
 TimeOfProgram = (time.time() - start_time)
